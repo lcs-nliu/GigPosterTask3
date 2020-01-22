@@ -31,10 +31,6 @@ canvas.drawShapesWithBorders = false
 canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
 canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 
-//// fill and line color = purple
-//canvas.fillColor = Color(hue: 309, saturation: 78, brightness: 64, alpha: 100)
-//canvas.lineColor = Color(hue: 309, saturation: 78, brightness: 64, alpha: 100)
-
 // loops for coordinates of shapes
 for y in stride (from: 0, to: 400 , by: 80){
     for x in stride (from: 0, to: 400 , by: 80){
@@ -58,7 +54,7 @@ for y in stride (from: 0, to: 400 , by: 80){
     }
 }
 
-// draw the text and change text colour to white
+// draw the title and change text colour to white
 canvas.textColor = Color(hue: 83, saturation: 4, brightness: 89, alpha: 100)
 canvas.drawText(message: "the velvet underground", at: Point(x:10, y:400), size: 30)
 
@@ -69,8 +65,8 @@ canvas.drawText(message: "thursday" + "\n" + "october 14 1971 / 8 pm", at: Point
 
 // draw the lines and fill line color off white
 canvas.lineColor = Color(hue: 83, saturation: 4, brightness: 89, alpha: 100)
-   canvas.drawLine(from: Point(x: 0, y: 460), to: Point(x: 400, y: 460), lineWidth: 3)
-   canvas.drawLine(from: Point(x: 0, y: 550), to: Point(x: 400, y: 550), lineWidth: 3)
+canvas.drawLine(from: Point(x: 0, y: 460), to: Point(x: 400, y: 460), lineWidth: 3)
+canvas.drawLine(from: Point(x: 0, y: 550), to: Point(x: 400, y: 550), lineWidth: 3)
 
 /*:
  ## Use Source Control
